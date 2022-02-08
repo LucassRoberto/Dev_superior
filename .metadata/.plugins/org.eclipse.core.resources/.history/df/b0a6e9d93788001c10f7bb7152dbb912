@@ -1,0 +1,20 @@
+package exercise1Class;
+
+import java.util.List;
+
+import exercise1Enum.WorkerLevel;
+
+public class worker {
+
+	private String name;
+	private WorkerLevel level;
+	private double baseSalary;
+	
+	private Department department;
+	//como o trabalhador tem vários contratos, deverá ser criada uma lista 
+	private List<HourContract> contracts;
+	
+	public Worker () {
+		
+	}
+}

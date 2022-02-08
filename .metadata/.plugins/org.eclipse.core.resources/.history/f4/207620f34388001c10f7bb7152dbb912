@@ -1,0 +1,37 @@
+/*Ler os dados de um trabalhador com N contratos (N fornecido pelo usuário). Depois, solicitar
+do usuário um mês e mostrar qual foi o salário do funcionário nesse mês
+ * 
+ * */
+package exercise1;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import exercise1Class.Worker;
+import exercise1Enum.WorkerLevel;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner (System.in);
+
+		System.out.print("Enter the department name: ");
+		String departmentName = sc.nextLine();
+		System.out.print("Enter worker data: ");
+		System.out.print("Name: ");
+		String workerName = sc.nextLine();
+		System.out.print("Level: ");
+		String workerLevel = sc.nextLine();
+		System.out.print("Base salary: ");
+		double baseSalary = sc.nextDouble();
+		Worker worker = new Worker (workerName, WorkerLevel.valueOf(workerLevel), baseSalary, new Department (departmentName));
+		
+		
+		
+		
+	
+	sc.close();
+	}
+
+}
